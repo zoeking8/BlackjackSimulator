@@ -2,14 +2,6 @@
 
 namespace BlackjackSimulator
 {
-	public enum Suit
-	{
-		Hearts,
-		Diamonds,
-		Clubs,
-		Spades
-	}
-
 	public enum Rank
 	{
 		Two,
