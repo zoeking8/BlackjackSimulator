@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
-using BlackjackSimulator;
+using BlackjackSimulatorUI;
 
 namespace BlackjackSimulator.UnitTest
 {
@@ -10,7 +10,7 @@ namespace BlackjackSimulator.UnitTest
 		[Test]
 		public void HandTest_ctor()
 		{
-			var hand = new Hand();
+			var hand = new Hand(0);
 			
 			Assert.AreEqual(0, hand.Cards.Count);
 			Assert.AreEqual(false, hand.IsBust);
@@ -47,7 +47,7 @@ namespace BlackjackSimulator.UnitTest
 
 		private static void HandTest_AddCard(IReadOnlyCollection<Card> cards, bool expectedIsBust, int expectedScore)
 		{
-			var hand = new Hand();
+			var hand = new Hand(0);
 
 			foreach (var card in cards)
 			{
@@ -64,5 +64,6 @@ namespace BlackjackSimulator.UnitTest
 			Assert.AreEqual(expectedIsBust, hand.IsBust);
 			Assert.AreEqual(expectedScore, hand.Score);
 		}
+
 	}
 }

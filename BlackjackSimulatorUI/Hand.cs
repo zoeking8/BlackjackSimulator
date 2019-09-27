@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BlackjackSimulator
+namespace BlackjackSimulatorUI
 {
 	public class Hand
 	{
@@ -11,6 +11,10 @@ namespace BlackjackSimulator
 		public bool IsBlackjack => Score == 21 && _cards.Count == 2;
 
 		public bool IsBust => Score > 21;
+		public bool HasStuck { get; set; }
+		public int Bet => _bet;
+
+
 
 		public int Score
 		{

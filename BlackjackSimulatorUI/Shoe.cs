@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BlackjackSimulator
+namespace BlackjackSimulatorUI
 {
 	public class Shoe
 	{
 		private List<Card> _cards;
 		public IReadOnlyCollection<Card> Cards => _cards;
 
-		public Shoe(int deckCount = 4) 
+		public Shoe(int deckCount = 4)
 		{
 			var cards = new List<Card>();
 

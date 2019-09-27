@@ -1,4 +1,4 @@
-﻿namespace BlackjackSimulator
+﻿namespace BlackjackSimulatorUI
 {
 	public class Game
 	{
@@ -9,5 +9,7 @@
 		//	hand.AddCard(new Card(Suit.Clubs, Rank.Ace));
 		//	var score = hand.Score;
 		//}
+
+
 	}
 }

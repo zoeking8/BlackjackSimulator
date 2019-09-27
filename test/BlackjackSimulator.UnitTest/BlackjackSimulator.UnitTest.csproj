@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-	<ProjectReference Include="..\..\src\BlackjackSimulator\BlackjackSimulator.csproj" />
+    <ProjectReference Include="..\..\BlackjackSimulatorUI\BlackjackSimulatorUI.csproj" />
   </ItemGroup>
 
 </Project>
